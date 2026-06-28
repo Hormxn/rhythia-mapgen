@@ -16,13 +16,17 @@ Takes audio files and generates rhythm game maps by:
 
 ## Usage
 
-Edit `AUDIO_DIR` and `OUTPUT_DIR` at the top of `generate.py`, then:
+### Batch mode (all MP3s in a folder)
+
+Point `AUDIO_DIR` and `OUTPUT_DIR` at the top of `generate.py` to your folders, then:
 
 ```bash
 python3 generate.py
 ```
 
-Or process a single file:
+It will process every `.mp3` in `AUDIO_DIR` and create a `.phxm` map for each one in `OUTPUT_DIR`. Drop hundreds of songs in and let it run.
+
+### Single file
 
 ```bash
 python3 generate.py -i /path/to/song.mp3 -o /path/to/output
